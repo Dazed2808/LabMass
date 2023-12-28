@@ -6,7 +6,7 @@ int removeDuplicates(std::vector<int>& nums) {
         return 0;
     }
 
-    int uniqueCount = 1;  // Індекс першого унікального елемента
+    int uniqueCount = 1; 
 
     for (int i = 1; i < nums.size(); ++i) {
         if (nums[i] != nums[i - 1]) {
@@ -18,7 +18,6 @@ int removeDuplicates(std::vector<int>& nums) {
 }
 
 int main() {
-    // Приклади використання:
     std::vector<int> nums1 = {1, 1, 2};
     int result1 = removeDuplicates(nums1);
     std::cout << "Приклад 1: " << result1 << ", nums = [";
