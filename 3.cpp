@@ -15,7 +15,6 @@ std::vector<int> sortedSquares(const std::vector<int>& nums) {
 }
 
 int main() {
-    // Приклади використання:
     std::vector<int> nums1 = {-4, -1, 0, 3, 10};
     std::vector<int> result1 = sortedSquares(nums1);
     std::cout << "Приклад 1:";
