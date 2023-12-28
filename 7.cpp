@@ -6,7 +6,6 @@ bool checkIfExistsNAndItsDouble(std::vector<int>& arr) {
     std::unordered_set<int> seen;
 
     for (int num : arr) {
-        // Перевірка умови arr[i] == 2 * arr[j]
         if (seen.count(num * 2) || (num % 2 == 0 && seen.count(num / 2))) {
             return true;
         }
@@ -18,7 +17,6 @@ bool checkIfExistsNAndItsDouble(std::vector<int>& arr) {
 }
 
 int main() {
-    // Приклади використання:
     std::vector<int> arr1 = {10, 2, 5, 3};
     bool result1 = checkIfExistsNAndItsDouble(arr1);
     std::cout << "Приклад 1: " << (result1 ? "true" : "false") << std::endl;
