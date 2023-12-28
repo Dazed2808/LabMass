@@ -14,14 +14,12 @@ void merge(std::vector<int>& nums1, int m, std::vector<int>& nums2, int n) {
         }
     }
 
-    // Додаткові елементи з nums2 (якщо вони залишились)
     while (index2 >= 0) {
         nums1[mergedIndex--] = nums2[index2--];
     }
 }
 
 int main() {
-    // Приклади використання:
     std::vector<int> nums1_1 = {1, 2, 3, 0, 0, 0};
     int m1 = 3;
     std::vector<int> nums2_1 = {2, 5, 6};
